@@ -20,6 +20,9 @@ class Card():
             elif self.color not in self.color_list:
                 logger.error(f"Card do not exist!")
 
+    def __str__(self) -> str:
+        return str(self.number) + ' of ' + self.color
+
 
 if __name__ == "__main__":
     D6 = Card("Diamonds", 45)
